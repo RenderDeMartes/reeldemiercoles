@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reel de Miércoles — Secure Portal</title>
+  <meta name="description" content="Totally secure portal. Trust.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. Login -->
+  <main id="login" class="screen screen--login">
+    <form id="login-form" class="login-card" autocomplete="off" novalidate>
+      <div class="login-card__badge">🔒 ULTRA SECURE™</div>
+      <h1 class="login-card__title">Reel de Miércoles</h1>
+      <p class="login-card__subtitle">Portal de acceso de máxima seguridad militar</p>
+
+      <label class="field">
+        <span>Usuario</span>
+        <input id="user" name="user" type="text" spellcheck="false" autocapitalize="off" required>
+      </label>
+
+      <label class="field">
+        <span>Contraseña</span>
+        <input id="pass" name="pass" type="password" required>
+      </label>
+
+      <p id="login-error" class="login-card__error" role="alert" hidden></p>
+
+      <button type="submit" class="btn">Entrar</button>
+
+      <p class="login-card__hint">Pista: es lo primero que probarías.</p>
+    </form>
+  </main>
+
+  <!-- 2. Fake hack -->
+  <section id="hack" class="screen screen--hack" hidden aria-live="assertive">
+    <div class="hack__skull" aria-hidden="true">☠</div>
+    <h2 class="hack__title" data-text="TU PC HA SIDO HACKEADA">TU PC HA SIDO HACKEADA</h2>
+    <div class="hack__bar"><div id="hack-progress" class="hack__bar-fill"></div></div>
+    <pre id="hack-log" class="hack__log"></pre>
+  </section>
+
+  <!-- 3. Bro -->
+  <section id="bro" class="screen screen--bro" hidden>
+    <div class="bro">
+      <div class="bro__emoji" aria-hidden="true">😐</div>
+      <h2 class="bro__title">bro.</h2>
+      <p class="bro__text">
+        this is a website for random apps.<br>
+        just use the specific one I built for you, bro.
+      </p>
+
+      <ul class="apps">
+        <li>
+          <a class="app" href="https://mixnmatchpadel.reeldemiercoles.com">
+            <span class="app__icon" aria-hidden="true">🎾</span>
+            <span class="app__name">Mix n Match Padel</span>
+            <span class="app__tag">soon™</span>
+          </a>
+        </li>
+      </ul>
+
+      <button id="again" class="btn btn--ghost" type="button">volver a hackearme</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
