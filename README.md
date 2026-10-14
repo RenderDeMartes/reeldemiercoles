@@ -9,14 +9,6 @@ Plain static HTML/CSS/JS, no build step.
 
 ## Deploy
 
-Every push to `main` uploads the repo to `public_html` via GitHub Actions (FTPS).
-
-Repo secrets needed:
-
-| Secret | Value |
-| --- | --- |
-| `FTP_SERVER` | `ftp.reeldemiercoles.com` |
-| `FTP_USERNAME` | FTP account scoped to `public_html` |
-| `FTP_PASSWORD` | its password |
+cPanel pulls this repo and copies it to `public_html` (cron job), so a push to `main` goes live within a minute.
 
 Run locally: open `index.html` in a browser.
