@@ -1,6 +1,6 @@
 # reeldemiercoles.com
 
-Meme landing for reeldemiercoles.com: fake login → fake "you got hacked" screen (5 s) → "bro, use the app I built for you".
+Meme landing for reeldemiercoles.com: fake login → fake "you got hacked" screen (5 s) → "bro, use the app I built for you" (no app links on purpose).
 
 Plain static HTML/CSS/JS, no build step.
 

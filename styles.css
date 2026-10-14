@@ -174,24 +174,6 @@ body {
 .bro__title { margin: 8px 0; font-size: clamp(40px, 10vw, 72px); letter-spacing: -.02em; }
 .bro__text { margin: 0 0 32px; color: var(--muted); font-size: clamp(17px, 4.2vw, 21px); line-height: 1.5; }
 
-.apps { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-.app {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  text-align: left;
-  text-decoration: none;
-  color: var(--text);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 16px 18px;
-  transition: border-color .15s, transform .15s;
-}
-.app:hover { border-color: var(--accent); transform: translateY(-2px); }
-.app__icon { font-size: 28px; }
-.app__name { flex: 1; font-weight: 600; font-size: 17px; }
-.app__tag { font: 12px var(--mono); color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {
   .screen--hack, .hack__skull, .hack__title::before, .hack__title::after { animation: none; }
